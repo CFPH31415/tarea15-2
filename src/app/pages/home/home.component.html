@@ -1,0 +1,63 @@
+ <div class="container">
+        <h1>Formulario de Registro</h1>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">NOMBRE</th>
+                <th scope="col">APELLIDO</th>
+                <th scope="col">CARRERA</th>
+                <th scope="col">ELIMINAR</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let nom of datos;let i=index">
+               <td>{{nom.nombre}}</td>
+               <td>{{nom.apellido}}</td>
+               <td>{{nom.carrera}}</td>
+               <td><button class="btn btn-primary" type="submit" (click)="eliminar(i)">ELIMINAR</button></td>
+              </tr>
+            </tbody>
+          </table>
+        <br>
+        <form action="row g-2">  
+            <form class="row g-2">
+                <div class="col-md-5">
+                  <label for="nombre" class="form-label">NOMBRE</label>
+                  <input type="text" class="form-control" id="nombre" #nombre>
+                </div>
+                <br>
+                <div class="col-md-5">
+                  <label for="apellido" class="form-label">APELLIDO</label>
+                  <input type="text" class="form-control" id="apellido" #apellido >
+                </div>
+                <br>
+                <div class="col-md-5">
+                  <label for="carrera" class="form-label">CARRERA</label>
+                  <input type="text" class="form-control" id="carrera" #carrera >
+                </div>
+                <div class="col-10">
+                  <button type="submit" class="btn btn-primary"  (click)="registrar(nombre.value,apellido.value,carrera.value)">Agregar datos</button>
+                </div>
+              </form>
+        </form>
+    </div>
+    
+      
+    
+      
+
+
+
+
+ 
+
+
+      
+    
+      
+
+
+
+
+ 
+
