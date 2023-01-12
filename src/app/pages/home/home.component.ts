@@ -16,10 +16,16 @@ ngOnInit(): void {
 }
 
 registrar(nombre:string,apellido:string,carrera:string){
-  this.datos.push({nombre,apellido,carrera})
-  
+  if(nombre.length && apellido.length && carrera.length ){
+  this.datos.push({nombre,apellido,carrera});
+
+}else{
+  alert('Rellenar datos');
+}
  }
  eliminar(index:number){
+  if (confirm("¿Deseas eliminar el registro?")) {
   this.datos.splice(index,1) 
  }
+}
 }
