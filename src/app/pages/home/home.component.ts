@@ -16,16 +16,7 @@ constructor(private formBuilder:FormBuilder){
 }
 ngOnInit(): void {
 }
-loadAPI():any{
-  const response = {
-    nombre:'',
-    DNI:'',
-    estado:''
-  };
 
-  this.formLogin.patchValue(response);
-   
-}
 send(): any{
   console.log(this.formLogin.value)
 }
