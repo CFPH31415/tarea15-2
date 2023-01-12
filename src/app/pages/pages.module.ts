@@ -1,9 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
-import { FormsModule ,ReactiveFormsModule } from '@angular/forms';
-
-
 
 @NgModule({
   declarations: [
@@ -11,8 +8,6 @@ import { FormsModule ,ReactiveFormsModule } from '@angular/forms';
   ],
   imports: [
     CommonModule,
-    FormsModule,
-    ReactiveFormsModule
 
   ],
   exports:[
