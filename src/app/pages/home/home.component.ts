@@ -9,9 +9,6 @@ import {FormGroup} from '@angular/forms';
 export class HomeComponent implements OnInit {
 datos:any[]=[{nombre:'Carlos',apellido:'Portillo',carrera:'Front-end Developer'}]
 
-@Output() repuesta:string='';
-public formLogin!: FormGroup;
-
 ngOnInit(): void {
 }
 
