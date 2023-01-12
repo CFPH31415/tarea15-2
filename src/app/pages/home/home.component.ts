@@ -1,5 +1,5 @@
 import { Component ,OnInit ,Output} from '@angular/core';
-import {FormGroup, FormBuilder,} from '@angular/forms';
+import {FormGroup} from '@angular/forms';
 
 @Component({
   selector: 'app-home',
@@ -12,13 +12,7 @@ datos:any[]=[{nombre:'Carlos',apellido:'Portillo',carrera:'Front-end Developer'}
 @Output() repuesta:string='';
 public formLogin!: FormGroup;
 
-constructor(private formBuilder:FormBuilder){
-}
 ngOnInit(): void {
-}
-
-send(): any{
-  console.log(this.formLogin.value)
 }
 
 registrar(nombre:string,apellido:string,carrera:string){
